@@ -182,7 +182,7 @@
 
                 setTimeout(() => {
                     for (let i = 0; i < messages.length; i++) {
-                        let timeDelay = (i === 2) ? 8000 : (i === 3) ? 18000 : i * 3000;            // Variable timings for each message (begin typing)
+                        let timeDelay = (i === 1) ? 5000 : (i === 2) ? 8000 : (i === 3) ? 18000 : i * 3000;            // Variable timings for each message (begin typing)
                         setTimeout(() => {
                             const messageBubble = messages[i].querySelector(".message-bubble");
                             const messageText = messageBubble.querySelector(".message-text");
